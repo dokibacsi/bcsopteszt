@@ -24,14 +24,14 @@ class ProgramTest {
         program.ujAlakzat(new Hasab(1,1,1));
     }
 
-//    @Test
-//    void testLista(){
-//        ArrayList<FemAlakzat> lista = program.getLista();
-//        Assertions.assertEquals(2, lista.size());
-//
-//        lista.add(new Gomb(1));
-//        Assertions.assertEquals(2, program.getLista().size());
-//    }
+    @Test
+    void testLista(){
+        ArrayList<FemAlakzat> lista = program.getLista();
+        Assertions.assertEquals(2, lista.size());
+
+        lista.add(new Gomb(1));
+        Assertions.assertEquals(2, program.getLista().size());
+    }
 
     @Test
     void testSzamolasok(){
