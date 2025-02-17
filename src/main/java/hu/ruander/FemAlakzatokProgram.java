@@ -1,17 +1,30 @@
 package hu.ruander;
 
+import hu.ruander.alakzatok.FemAlakzat;
+import hu.ruander.alakzatok.Gomb;
+import hu.ruander.alakzatok.Hasab;
 import java.util.ArrayList;
 
 public class FemAlakzatokProgram {
-    public void ujAlakzat(hu.ruander.Gomb gomb) {
+
+    private ArrayList<FemAlakzat> femaalkzatok;
+    Gomb gomb;
+    Hasab hasab;
+
+    public FemAlakzatokProgram () {
+        this.femaalkzatok = new ArrayList<>(getLista());
     }
 
-    public ArrayList<hu.ruander.FemAlakzat> getLista() {
+
+    public void ujAlakzat(Hasab hasab) {
+        femaalkzatok.add(hasab);
     }
 
-    public double osszSuly() {
+    public void ujAlakzat(Gomb gomb) {
+        femaalkzatok.add(gomb);
     }
 
-    public double gombokOsszSuly() {
+    public ArrayList<FemAlakzat> getLista(){
+        return femaalkzatok;
     }
 }

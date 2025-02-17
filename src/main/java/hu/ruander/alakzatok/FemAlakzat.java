@@ -1,12 +1,14 @@
 package hu.ruander.alakzatok;
 
-public class FemAlakzat {
-    public static double getFajsuly() {
-    }
+public abstract class FemAlakzat {
 
-    public double terfogat() {
+    abstract public double terfogat();
+
+    public static double getFajsuly() {
+        return 1.15;
     }
 
     public double suly() {
+        return terfogat() * getFajsuly();
     }
 }

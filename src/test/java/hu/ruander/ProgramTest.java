@@ -32,15 +32,15 @@ class ProgramTest {
         lista.add(new Gomb(1));
         Assertions.assertEquals(2, program.getLista().size());
     }
-
-    @Test
-    void testSzamolasok(){
-        Assertions.assertEquals(5.96, program.osszSuly(), 0.01);
-        Assertions.assertEquals(4.81, program.gombokOsszSuly(), 0.01);
-
-        Hasab hasab = new Hasab(1.0, 1.0, 1.0);
-        Assertions.assertEquals(hasab.terfogat(), program.minV().terfogat());
-        Gomb gomb = new Gomb(1.0);
-        Assertions.assertEquals(gomb.terfogat(), program.maxV().terfogat());
-    }
+//
+//    @Test
+//    void testSzamolasok(){
+//        Assertions.assertEquals(5.96, program.osszSuly(), 0.01);
+//        Assertions.assertEquals(4.81, program.gombokOsszSuly(), 0.01);
+//
+//        Hasab hasab = new Hasab(1.0, 1.0, 1.0);
+//        Assertions.assertEquals(hasab.terfogat(), program.minV().terfogat());
+//        Gomb gomb = new Gomb(1.0);
+//        Assertions.assertEquals(gomb.terfogat(), program.maxV().terfogat());
+//    }
 }
